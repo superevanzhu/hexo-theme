@@ -14,7 +14,8 @@
               {% if post.type === 'picture' %}
                 {{ post.content }}
               {% else %}
-                <span itemprop="name">{{ post.title | default(__('post.untitled')) }}</span>
+                <span itemprop="name">{{ post.title | default(__('post.untitled')) }}
+                </span>
               {% endif %}
             </a>
         {% endif %}
